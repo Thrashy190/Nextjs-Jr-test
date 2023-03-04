@@ -18,7 +18,7 @@ export default function OpportunityCard({
           {info.map(({ subtitle, data, percetage }, index) => {
             return (
               <div key={index} className="flex flex-col mb-4">
-                <div className="grid grid-cols-3 text-base ">
+                <div className="grid grid-cols-3 text-base mb-5">
                   <div className="col-span-2">{subtitle}</div>
                   <div className="flex items-end flex-col">
                     <div
@@ -30,42 +30,47 @@ export default function OpportunityCard({
                     >
                       {data}
                     </div>
-                    {percetage && (
-                      <div className="grid grid-cols-2 ">
-                        <div className="w-full bg-[#EBEAED] rounded-sm h-1.5 mb-4 ">
-                          <div
-                            className={`bg-pantone-blue h-1.5 rounded-full w-1/2`}
-                          ></div>
-                        </div>
-
-                        <div className={`text-` + color}>(XX%)</div>
-                      </div>
-                    )}
                   </div>
                 </div>
+                {percetage && (
+                  <div className="flex justify-end mb-5">
+                    <div className="flex items-center w-full">
+                      <div className="w-1/4 bg-[#EBEAED] rounded-sm h-1.5">
+                        <div
+                          className={
+                            `bg-` + color + ` h-1.5 rounded-full w-1/2`
+                          }
+                        ></div>
+                      </div>
+
+                      <div className={`text-` + color}>(XX%)</div>
+                    </div>
+                  </div>
+                )}
                 <div className={index === info.length - 1 ? `hidden` : `block`}>
-                  <div className="h-[1px] w-[368px] border-dashed border border-[#CFCFCF] "></div>
+                  <div className="h-[1px] w-auto border-dashed border border-[#CFCFCF] "></div>
                 </div>
               </div>
             );
           })}
         </div>
         {volume && (
-          <div className="bg-pantone-gray px-10 pt-5 pb-5 self-end">
-            {volume.map(({ subtitle, data }, index) => {
+          <div className="bg-pantone-gray px-10 pt-5 pb-5 self-end w-full">
+            {volume.map(({ subtitle, data }, i) => {
               return (
-                <div className="flex flex-col items-end text-base ">
-                  <div className="pb-2">{subtitle}</div>
-                  <div className={`pb-4 text-2xl text-` + color}>
-                    {currencyFormatter.format(data)}
+                <div>
+                  <div className="flex flex-col items-end text-base ">
+                    <div className="pb-2">{subtitle}</div>
+                    <div className={`pb-4 text-2xl text-` + color}>
+                      {currencyFormatter.format(data)}
+                    </div>
                   </div>
-
                   <div
                     className={
-                      index === info.length - 1 ? `hidden pb-3` : `block  pb-3`
+                      i === info.length - 1 ? `hidden pb-3` : `block pb-3`
                     }
                   >
-                    <div className="h-[1px] w-[368px]  bg-[#CFCFCF] "></div>
+                    <div className="h-[1px] w-auto bg-[#CFCFCF] "></div>
                   </div>
                 </div>
               );
