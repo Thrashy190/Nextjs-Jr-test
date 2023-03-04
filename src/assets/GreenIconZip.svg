@@ -1,0 +1,7 @@
+<svg id="Icon_48_place_holder" data-name="Icon/48 place holder" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="Icon_48_place_holder_style_" data-name="Icon/48 place holder (style)" width="32" height="32" rx="16" fill="#84ae2b"/>
+  <g id="UI_icon_pie_chart_light" data-name="UI icon/pie_chart/light" transform="translate(6 6)">
+    <path id="Ellipse_207_Stroke_" data-name="Ellipse 207 (Stroke)" d="M8,16A8,8,0,1,1,8,0,1,1,0,0,1,9,1V7h6a1,1,0,0,1,1,1,8,8,0,0,1-8,8ZM7,2.083H7A6,6,0,0,0,8,14a6,6,0,0,0,5.915-5H8A1,1,0,0,1,7,8V2.083Z" transform="translate(0 4)" fill="#fff"/>
+    <path id="Ellipse_208_Stroke_" data-name="Ellipse 208 (Stroke)" d="M8,9H1A1,1,0,0,1,0,8V1A1,1,0,0,1,1,0,7.947,7.947,0,0,1,6.656,2.343,7.949,7.949,0,0,1,9,8,1,1,0,0,1,8,9ZM2,2.083V7H6.917A5.974,5.974,0,0,0,5.242,3.757,5.974,5.974,0,0,0,2,2.083Z" transform="translate(11.001)" fill="#fff"/>
+  </g>
+</svg>

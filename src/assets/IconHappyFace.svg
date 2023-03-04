@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <g id="icon-happy-face" transform="translate(-537 -785)">
+    <g id="Group_15807" data-name="Group 15807" transform="translate(231 -74)">
+      <g id="Icon" transform="translate(306 859)">
+        <path id="Icon.BG" d="M36,0A36,36,0,1,1,0,36,36,36,0,0,1,36,0Z" fill="#25282a" opacity="0.114"/>
+      </g>
+    </g>
+    <path id="face-smile-regular" d="M16,22a6.585,6.585,0,0,0,4.9-2.119,1.5,1.5,0,1,1,2.2,2.031,9.707,9.707,0,0,1-14.2,0,1.452,1.452,0,0,1,.081-2.119,1.5,1.5,0,0,1,2.119.087A6.585,6.585,0,0,0,16,22Zm-2.975-9a2,2,0,1,1-2-2A2,2,0,0,1,13.025,13Zm6,0a2,2,0,1,1,2,2A2,2,0,0,1,19.025,13ZM32,16A16,16,0,1,1,16,0,16,16,0,0,1,32,16ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z" transform="translate(557 805)"/>
+  </g>
+</svg>

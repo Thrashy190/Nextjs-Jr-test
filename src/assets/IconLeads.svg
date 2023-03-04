@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <g id="icon-leads" transform="translate(-306 -859)">
+    <g id="Icon" transform="translate(306 859)">
+      <path id="Icon.BG" d="M36,0A36,36,0,1,1,0,36,36,36,0,0,1,36,0Z" fill="#25282a" opacity="0.114"/>
+    </g>
+    <g id="users_together" data-name="users together" transform="translate(323.045 878.448)">
+      <path id="New_customer_Icon" data-name="New customer Icon" d="M6.97,27.876V24.392h9.8a4.938,4.938,0,0,0-4.732-3.484H6.97V17.424h5.069a8.5,8.5,0,0,1,8.45,8.71v1.742ZM0,8.712V6.97a6.969,6.969,0,1,1,13.938,0V8.712A6.969,6.969,0,0,1,0,8.712ZM3.486,6.97V8.712a3.484,3.484,0,1,0,6.968,0V6.97a3.484,3.484,0,1,0-6.968,0Z" transform="translate(17.422 0)" fill="#25282a" opacity="0.69"/>
+      <path id="New_customer_Icon-2" data-name="New customer Icon" d="M13.937,27.875V24.39h9.8a4.933,4.933,0,0,0-4.732-3.482H13.937V17.422h5.069a8.5,8.5,0,0,1,8.449,8.711v1.741ZM0,27.875V26.134a8.627,8.627,0,0,1,8.711-8.711h5.226v3.485H8.711A5.07,5.07,0,0,0,3.834,24.39h10.1v3.485ZM6.97,8.711V6.967a6.969,6.969,0,0,1,13.938,0V8.711a6.969,6.969,0,0,1-13.938,0Zm3.482-1.744V8.711a3.485,3.485,0,0,0,6.971,0V6.967a3.485,3.485,0,0,0-6.971,0Z" transform="translate(0 5.228)" fill="#25282a"/>
+    </g>
+  </g>
+</svg>
