@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
   return (
     <>
-      <main className="relative">
+      <main className={`relative ` + inter.className}>
         <section className="bg-pantone pb-[350px] lg:pb-60 xl:pb-40 pt-16  h-3/5 lg:h-96 flex flex-col lg:flex-row lg:justify-evenly lg:items-center ">
           <div className="w-full p-4  lg:max-w-lg text-white flex flex-col gap-4">
             <span className="font-bold text-2xl "> SOLD.com Difference </span>
@@ -28,7 +28,7 @@ export default function Home() {
           <ZipCard />
         </section>
         <RankCard />
-        <section className="lg:mt-60 xl:mt-36 mt-[280px]">
+        <section className="lg:mt-60 xl:mt-40 mt-[240px]">
           <div className=" flex justify-start gap-3 mx-8 mb-3 items-center">
             <div className="w-4 h-8 bg-pantone-red rounded"></div>
             <span className="text-base font-bold ">
