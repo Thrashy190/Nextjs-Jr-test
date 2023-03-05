@@ -1,6 +1,6 @@
-import Image from "next/image";
-import CardProps from "@/interface/CardInterface";
-import currencyFormatter from "@/utils/currencyFormatter";
+import Image from 'next/image';
+import CardProps from '@/interface/CardInterface';
+import currencyFormatter from '@/utils/currencyFormatter';
 
 export default function OpportunityCard({
   color,
@@ -33,9 +33,9 @@ export default function OpportunityCard({
                   </div>
                 </div>
                 {percetage && (
-                  <div className="flex justify-end mb-5">
-                    <div className="flex items-center w-full">
-                      <div className="w-1/4 bg-[#EBEAED] rounded-sm h-1.5">
+                  <div className="mb-5 flex justify-end w-full">
+                    <div className="flex items-center w-auto">
+                      <div className="w-16 bg-[#EBEAED] rounded-sm h-1.5 ">
                         <div
                           className={
                             `bg-` + color + ` h-1.5 rounded-full w-1/2`
@@ -43,7 +43,7 @@ export default function OpportunityCard({
                         ></div>
                       </div>
 
-                      <div className={`text-` + color}>(XX%)</div>
+                      <div className={`ml-2 text-` + color}>(XX%)</div>
                     </div>
                   </div>
                 )}
@@ -58,7 +58,7 @@ export default function OpportunityCard({
           <div className="bg-pantone-gray px-10 pt-5 pb-5 self-end w-full">
             {volume.map(({ subtitle, data }, i) => {
               return (
-                <div>
+                <div key={i}>
                   <div className="flex flex-col items-end text-base ">
                     <div className="pb-2">{subtitle}</div>
                     <div className={`pb-4 text-2xl text-` + color}>

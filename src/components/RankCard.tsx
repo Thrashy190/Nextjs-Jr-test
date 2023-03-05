@@ -1,28 +1,26 @@
-import Image from "next/image";
-import arrow from "@/assets/MdArrowRoundDown.svg";
+import Image from 'next/image';
+import arrow from '@/assets/MdArrowRoundDown.svg';
 
 export default function RankCard() {
   return (
-    <div className="mx-5  lg:mx-32 shadow-md absolute top-[640px] lg:top-72">
+    <div className="mx-5  lg:mx-32 shadow-md absolute top-[600px] lg:top-72">
       <section className="bg-white p-5 lg:p-0 rounded-lg grid grid-cols-1 lg:grid-cols-2">
-        <div className="lg:ml-14 lg:mt-7 lg:mb-8 lg:mr-36">
+        <div className="lg:ml-14 lg:mt-7 lg:mr-4  xl:ml-14 xl:mt-7 xl:mb-8 xl:mr-36">
           <div className="text-base mb-4 ">
             Our referrals are routed to the top performing agents in our
             network. Rankings are based on numerous factors, including:
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 text-sm">
-            <ul className="list-none ">
-              <li className="my-2">
+          <div className="text-sm m-8 xl:m-0">
+            <ul className="list-none grid grid-cols-1 xl:grid-cols-2 ">
+              <li className="xl:my-2">
                 <span className="text-pantone-red mr-2">+</span>
                 <span> Transaction Statistics</span>
               </li>
-              <li>
+              <li className="xl:my-2">
                 <span className="text-pantone-red mr-2">+</span>
                 <span> Responsiveness</span>
               </li>
-            </ul>
-            <ul className="list-none ">
-              <li className="my-2">
+              <li>
                 <span className="text-pantone-red mr-2">+</span>
                 <span> Customer Satisfaction</span>
               </li>
@@ -44,8 +42,8 @@ export default function RankCard() {
                 <Image src={arrow} alt="Arrow" />
               </div>
             </div>
-            <div className="hidden lg:block">
-              <button className=" text-white bg-pantone-red hover:bg-red-600 font-bold rounded text-base py-3 w-28 ml-20">
+            <div className="hidden xl:block">
+              <button className=" text-white bg-pantone-red hover:bg-red-600 font-bold rounded text-base py-3 w-28 2xl:ml-20">
                 Learn More
               </button>
             </div>
@@ -56,8 +54,8 @@ export default function RankCard() {
             <span className="text-pantone-red pl-1">Guaranteed Display </span>
             program to help improve your ranking.
           </article>
-          <div className="lg:hidden block">
-            <button className=" text-white bg-pantone-red hover:bg-red-600 font-bold rounded text-base py-3 w-full lg:w-28 lg:ml-20">
+          <div className="xl:hidden block">
+            <button className=" text-white bg-pantone-red hover:bg-red-600 font-bold rounded text-base py-3 w-full xl:w-28 xl:ml-20">
               Learn More
             </button>
           </div>
