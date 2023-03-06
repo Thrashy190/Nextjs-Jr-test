@@ -1,43 +1,43 @@
-import LeadsIcons from '@/assets/IconLeads.svg';
-import HappyFace from '@/assets/IconHappyFace.svg';
-import SadFace from '@/assets/IconSadFace.svg';
-import CardProps from '@/interface/CardInterface';
+import LeadsIcons from "@/assets/IconLeads.svg";
+import HappyFace from "@/assets/IconHappyFace.svg";
+import SadFace from "@/assets/IconSadFace.svg";
+import StatsCardProps from "@/interfaces/StatsCardInterface";
 
-export const oportunityCard: CardProps = {
-  color: 'pantone-blue',
+export const oportunityCard: StatsCardProps = {
+  color: "blue",
   icon: LeadsIcons,
-  title: 'Opportunity',
+  title: "Opportunity",
   info: [
-    { subtitle: 'SOLD.com Leads', data: 500 },
-    { subtitle: 'Customers we promoted you to', data: 100, percetage: 20 },
-    { subtitle: 'Appointments set with you', data: 30 },
+    { subtitle: "SOLD.com Leads", data: 0 },
+    { subtitle: "Customers we promoted you to", data: 0, percetage: 0 },
+    { subtitle: "Appointments set with you", data: 0 },
   ],
 };
 
-export const winsCard: CardProps = {
-  color: 'pantone-green',
+export const winsCard: StatsCardProps = {
+  color: "green",
   icon: HappyFace,
-  title: 'Wins',
+  title: "Wins",
   info: [
-    { subtitle: 'Your signed agreements', data: 15 },
-    { subtitle: 'Your closings', data: 10 },
+    { subtitle: "Your signed agreements", data: 0 },
+    { subtitle: "Your closings", data: 0 },
   ],
   volume: [
-    { subtitle: 'Your closed volume', data: 3000000 },
-    { subtitle: 'Your commission (est)', data: 50000 },
+    { subtitle: "Your closed volume", data: 0 },
+    { subtitle: "Your commission (est)", data: 0 },
   ],
 };
 
-export const lossesCard: CardProps = {
-  color: 'pantone-red',
+export const lossesCard: StatsCardProps = {
+  color: "red",
   icon: SadFace,
-  title: 'Losses',
+  title: "Losses",
   info: [
-    { subtitle: 'Appointments that signed with another agent', data: 15 },
-    { subtitle: 'Lost closings', data: 10 },
+    { subtitle: "Appointments that signed with another agent", data: 0 },
+    { subtitle: "Lost closings", data: 0 },
   ],
   volume: [
-    { subtitle: 'Lost volume', data: 3000000 },
-    { subtitle: 'Lost commission (est)', data: 50000 },
+    { subtitle: "Lost volume", data: 0 },
+    { subtitle: "Lost commission (est)", data: 0 },
   ],
 };

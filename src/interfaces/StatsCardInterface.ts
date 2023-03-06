@@ -1,18 +1,18 @@
-interface InfoItems {
+export interface InfoItems {
   subtitle: string;
   data: number;
   percetage?: number;
 }
 
-interface VolumeItems {
+export interface VolumeItems {
   subtitle: string;
   data: number;
 }
 
-export default interface CardProps {
+export default interface StatsCardProps {
   color: string;
   icon: any;
   title: string;
-  info: Array<InfoItems>;
-  volume?: Array<VolumeItems>;
+  info: InfoItems[];
+  volume?: VolumeItems[];
 }
