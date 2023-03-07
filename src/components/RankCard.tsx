@@ -4,7 +4,7 @@ import RankCardProps from "@/interfaces/RankCardInterface";
 
 export default function RankCard({ rank }: RankCardProps) {
   return (
-    <div className="mx-5 xl:mx-28 shadow-md absolute top-[620px] lg:top-72">
+    <div className="mx-5 xl:mx-28 shadow-md absolute top-[620px] lg:top-[360px]">
       <section className="bg-white p-5 lg:p-0 rounded-lg grid grid-cols-1 lg:grid-cols-2">
         <div className="lg:ml-10 lg:mt-7 lg:mr-4  2xl:ml-14 xl:mt-7 xl:mb-8 xl:mr-30">
           <div className="text-base mb-4 ">

@@ -7,15 +7,20 @@ const StastsCardInfo = ({ info, color }: Partial<StatsCardProps>) => {
       {info &&
         info.map(({ subtitle, data, percetage }, index) => {
           return (
-            <div key={index} className="flex flex-col mb-4">
+            <div key={index} className="flex flex-col mb-6">
               <div className="grid grid-cols-3 text-base mb-5">
-                <div className="col-span-2 ">{subtitle}</div>
+                <div
+                  className={`col-span-2 ${
+                    color !== "red" ? `md:mt-4  xl:mt-4` : ``
+                  }`}
+                >
+                  {subtitle}
+                </div>
                 <div className="flex items-end flex-col">
                   <div
                     className={
-                      index === 0
-                        ? `font-bold text-3xl ` + getColor(color!)
-                        : `font-bold text-2xl ` + getColor(color!)
+                      `font-bold ${index === 0 ? `text-3xl ` : ` text-2xl `}` +
+                      getColor(color!)
                     }
                   >
                     {data}
@@ -26,11 +31,7 @@ const StastsCardInfo = ({ info, color }: Partial<StatsCardProps>) => {
                 <div className="mb-5 flex justify-end w-full">
                   <div className="flex items-center w-auto">
                     <div className="w-16 bg-[#EBEAED] rounded-sm h-1.5 ">
-                      <div
-                        className={
-                          `bg-pantone-blue` + ` h-1.5 rounded-full w-1/2`
-                        }
-                      ></div>
+                      <div className="bg-pantone-blue h-1.5 rounded-full w-1/2"></div>
                     </div>
 
                     <div className={`ml-2 ` + getColor(color!)}>(XX%)</div>

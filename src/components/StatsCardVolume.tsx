@@ -6,7 +6,7 @@ const StastsCardVolume = ({ volume, color }: Partial<StatsCardProps>) => {
   return (
     <>
       {volume && (
-        <div className="bg-pantone-gray px-10 pt-5 pb-5 self-end w-full">
+        <div className="bg-pantone-gray px-10 pt-5 pb-5 self-end w-full h-full">
           {volume.map(({ subtitle, data }, i) => {
             return (
               <div key={i}>
